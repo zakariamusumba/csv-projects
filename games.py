@@ -1,0 +1,20 @@
+import csv
+
+game = [
+	["minecraft" , 3500 , "Mojang"],
+	["TF2" , "free" , "Valve corp"],
+	["Super Mario" , 5000 , "Nintendo"],
+	["roblox" , "free" , "Roblox studios"],
+	["HFF", 700 , "505 games"],
+	["Among us", 24.99 , "Innersloth"],
+	["Hello neighbor" , "free" , "Tiny builds"],
+	["The Amazing Spiderman" , 500 , "Gameloft"],
+	["Blood Strike" , "free" , "NetEase Games"],
+	["Call of Duty M" , "free" , "Activison"]
+
+]
+
+with open("game.csv" , "w" , newline= "" , encoding = "utf-8") as file:
+	write = csv.writer(file)
+	write.writerows(game)
+	print("game list compacted.")
